@@ -37,6 +37,11 @@ requires 'Test::Pod::Coverage'  => '1.08';
 requires 'Test::Script'         => '1.07';
 requires 'Test::WWW::Mechanize' => '0';
 
+requires 'Test::MockObject'     => '0';
+requires 'Test::Inline'         => '0';
+requires 'Test::Snapshots'      => '0.02';
+requires 'Win32::GUITest'       => '0' if win32;
+
 no_index 'directory' => qw{ t xt eg share inc privinc };
 homepage 'https://github.com/szabgab/Task-Test';
 bugtracker 'https://github.com/szabgab/Task-Test';
