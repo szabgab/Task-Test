@@ -53,20 +53,22 @@ requires 'HTML::Lint'           => '0';
 requires 'LWP'                  => '0';
 requires 'LWP::Simple'          => '0';
 requires 'Test::HTML::Lint'     => '0';
-requires 'Test::WWW::Simple'    => '0';
+#requires 'Test::WWW::Simple'    => '0';
 requires 'HTTP::Proxy'          => '0';
-requires 'HTTP::Recorder'       => '0';
+#requires 'HTTP::Recorder'       => '0';
 requires 'Test::DatabaseRow'    => '0';
 requires 'File::Compare'        => '0';
 requires 'Text::Diff'           => '0';
 requires 'Test::Exception'      => '0';
 requires 'Test::Differences'    => '0';
 requires 'DBD::Mock'            => '0';
-requires 'Test::Unit'           => '0';
+#requires 'Test::Unit'           => '0';
 requires 'IPC::Run'             => '0';
 requires 'IPC::Run3'            => '0';
 requires 'Test::Memory::Cycle'  => '0';
 requires 'Test::Taint'          => '0';
+requires 'Test::Class'          => '0';
+requires 'Test::Class::Moose'   => '0';
 
 
 

@@ -9,6 +9,15 @@ our $VERSION = '0.02';
 
 Task::Test - an easy way to install lots of modules needed for testing
 
+=head1 DESCRIPTION
+
+For explanation on using some of the modules installed by this module check out
+the slides of L<Test Automaion Using Perl|http://edumaven.com/test-automation-using-perl/>.
+
+=head1 AUTHOR
+
+L<Gabor Szabo|http://szabgab.com/>
+
 =cut
 
 
