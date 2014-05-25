@@ -37,10 +37,38 @@ requires 'Test::Pod::Coverage'  => '1.08';
 requires 'Test::Script'         => '1.07';
 requires 'Test::WWW::Mechanize' => '0';
 
+requires 'Test::Warn'           => '0';
+requires 'Test::Strict'         => '0';
+requires 'Test::Deep'           => '0';
+requires 'Test::Distribution'   => '0';
 requires 'Test::MockObject'     => '0';
 requires 'Test::Inline'         => '0';
 requires 'Test::Snapshots'      => '0.02';
 requires 'Win32::GUITest'       => '0' if win32;
+requires 'Test::Kwalitee'       => '0';
+requires 'Pod::Spell'           => '0';
+requires 'Test::Spelling'       => '0';
+requires 'Devel::Cover'         => '0';
+requires 'HTML::Lint'           => '0';
+requires 'LWP'                  => '0';
+requires 'LWP::Simple'          => '0';
+requires 'Test::HTML::Lint'     => '0';
+requires 'Test::WWW::Simple'    => '0';
+requires 'HTTP::Proxy'          => '0';
+requires 'HTTP::Recorder'       => '0';
+requires 'Test::DatabaseRow'    => '0';
+requires 'File::Compare'        => '0';
+requires 'Text::Diff'           => '0';
+requires 'Test::Exception'      => '0';
+requires 'Test::Differences'    => '0';
+requires 'DBD::Mock'            => '0';
+requires 'Test::Unit'           => '0';
+requires 'IPC::Run'             => '0';
+requires 'IPC::Run3'            => '0';
+requires 'Test::Memory::Cycle'  => '0';
+requires 'Test::Taint'          => '0';
+
+
 
 no_index 'directory' => qw{ t xt eg share inc privinc };
 homepage 'https://github.com/szabgab/Task-Test';
