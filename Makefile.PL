@@ -44,7 +44,8 @@ requires 'Test::Distribution'   => '0';
 requires 'Test::MockObject'     => '0';
 requires 'Test::Inline'         => '0';
 requires 'Test::Snapshots'      => '0.02';
-requires 'Win32::GUITest'       => '0' if win32;
+requires 'Win32::GuiTest'       => '1.60' if win32;
+requires 'Win32::GUIRobot'      => '0.05' if win32;
 requires 'Test::Kwalitee'       => '0';
 requires 'Pod::Spell'           => '0';
 requires 'Test::Spelling'       => '0';
@@ -70,6 +71,14 @@ requires 'Test::Taint'          => '0';
 requires 'Test::Class'          => '0';
 requires 'Test::Class::Moose'   => '0';
 
+
+requires 'Selenium::Remote::Driver' => '0.2102';
+requires 'Test::Expect'             => '0.31';
+requires 'Test::Class'              => '0.46';
+requires 'Test::Mock::Simple'       => '0.04';
+requires 'Test::MockTime'           => '0.12';
+requires 'Test::Class::Moose'       => '0.54';
+requires 'X11::GUITest'             => '0.28';
 
 
 no_index 'directory' => qw{ t xt eg share inc privinc };
