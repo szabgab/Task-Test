@@ -5,7 +5,6 @@ use inc::Module::Install 1.00;
 # Workaround for the fact that Module::Install loads the modules
 # into memory and when Test::NoWarnings is loaded it will hide
 # the warnings generated from that point.
-# Removed in r2208, added again in r9001
 eval {
 	require Test::NoWarnings;
 	$SIG{__WARN__} = 'DEFAULT';
@@ -16,7 +15,7 @@ eval {
 # WON'T load modules to determine the version.
 # This _SHOULD_ theoretically make the "require Test::NoWarnings".
 # stuff above here no longer needed.
-configure_requires 'ExtUtils::MakeMaker' => '6.52';
+configure_requires 'ExtUtils::MakeMaker' => '6.98';
 
 
 name 'Task-Test';
@@ -50,12 +49,16 @@ requires 'Test::Memory::Cycle'  => '1.04';
 requires 'Test::Taint'          => '1.06';
 requires 'Test::Class'          => '0.46';
 requires 'Test::Class::Moose'   => '0.54';
-
+requires 'Test::FailWarnings'   => '0.008';
+requires 'Test::Warnings'       => '0.016';
+requires 'Test::Fatal'          => '0.013';
+requires 'Test::File'           => '1.36';
+requires 'Test::LongString'     => '0.15';
 
 
 requires 'Test::HTML::Lint'     => '2.20';
 requires 'HTML::Lint'           => '2.20';
-requires 'Test::WWW::Simple'    => '0.34';
+#requires 'Test::WWW::Simple'    => '0.34';
 
 requires 'Fennec'               => '2.017';
 requires 'Fennec::Declare'      => '1.002';
@@ -68,8 +71,8 @@ requires 'Pod::Spell'           => '1.15';
 requires 'Devel::Cover'         => '1.15';
 requires 'Devel::NYTProf'       => '5.06';
 
-requires 'LWP::UserAgent'       => '6.08';
-requires 'LWP::Simple'          => '6.08';
+requires 'LWP::UserAgent'       => '6.06';
+requires 'LWP::Simple'          => '6.00';
 requires 'LWP::Protocol::https' => '6.04';
 requires 'HTTP::Proxy'          => '0.300';
 #requires 'HTTP::Recorder'       => '0.07';
@@ -86,8 +89,10 @@ requires 'Test::Class'              => '0.46';
 requires 'Test::Mock::Simple'       => '0.04';
 requires 'Test::MockTime'           => '0.12';
 requires 'Test::Class::Moose'       => '0.54';
-requires 'X11::GUITest'             => '0.28';
+requires 'X11::GUITest'             => '0.28' if $^O eq 'linux';
 requires 'Capture::Tiny'            => '0.24';
+
+requires 'List::MoreUtils'          => '0.33';
 
 
 no_index 'directory' => qw{ t xt eg share inc privinc };
