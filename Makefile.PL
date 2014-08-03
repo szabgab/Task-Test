@@ -71,6 +71,14 @@ requires 'Pod::Spell'           => '1.15';
 requires 'Devel::Cover'         => '1.15';
 requires 'Devel::NYTProf'       => '5.06';
 
+requires 'Net::Telnet'          => '3.04';
+requires 'IO::Socket'           => '1.25';
+requires 'Net::FTP'             => '1.27';
+requires 'Net::SSH'             => '0.09';
+requires 'Net::SSH::Perl'       => '1.37';
+requires 'Plack'                => '1.0031';
+
+
 requires 'LWP::UserAgent'       => '6.06';
 requires 'LWP::Simple'          => '6.00';
 requires 'LWP::Protocol::https' => '6.04';
@@ -85,6 +93,8 @@ requires 'IPC::Run3'            => '0.048';
 
 requires 'Selenium::Remote::Driver' => '0.2102';
 requires 'Test::Expect'             => '0.31';
+requires 'Expect'                   => '1.21';
+requires 'Expect::Simple'           => '0.04';
 requires 'Test::Class'              => '0.46';
 requires 'Test::Mock::Simple'       => '0.04';
 requires 'Test::MockTime'           => '0.12';
@@ -93,6 +103,13 @@ requires 'X11::GUITest'             => '0.28' if $^O eq 'linux';
 requires 'Capture::Tiny'            => '0.24';
 
 requires 'List::MoreUtils'          => '0.33';
+
+requires 'TAP::Formatter::HTML'     => '0.11';
+requires 'Smolder'                  => '1.51';
+
+# color support for prove:
+requires 'Term::ANSIColor'          => '4.03' if not win32;
+requires 'Win32::Console'           => '0.10' if win32;
 
 
 no_index 'directory' => qw{ t xt eg share inc privinc };
