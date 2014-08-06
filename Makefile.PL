@@ -114,6 +114,11 @@ requires 'TAP::Formatter::HTML'     => '0.11';
 requires 'Smolder'                  => '1.51';
 requires 'WWW::Mechanize::Firefox'  => '0.75';
 
+requires 'Test::WWW::Mechanize::PSGI' => '0.35';
+requires 'Data::Random'               => '0.11';
+requires 'HTTP::CookieJar::LWP'       => '0.006';
+requires 'WWW::Mechanize::PhantomJS'  => '0.06';
+
 # color support for prove:
 requires 'Term::ANSIColor'          => '4.03' if not win32;
 requires 'Win32::Console'           => '0.10' if win32;
