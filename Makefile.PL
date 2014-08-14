@@ -57,6 +57,19 @@ requires 'Test::LongString'     => '0.15';
 requires 'Test::XPath'          => '0.16';
 
 
+requires 'Template'             => '2.25';      # helper for Devel::Cover
+requires 'PPI::HTML'            => '1.08';       # helper for Devel::Cover
+requires 'Perl::Tidy'           => '20140711';      # helper for Devel::Cover
+requires 'Pod::Coverage'        => '0.23';
+requires 'Pod::Coverage::CountParents' => '0';  # no version number in module.
+requires 'Parallel::Iterator'   => '1.00';
+requires 'JSON::XS'             => '3.01';
+requires 'Browser::Open'        => '0.04';
+
+requires 'Test::Compile'        => '1.2.0';
+
+
+
 requires 'Test::HTML::Lint'     => '2.20';
 requires 'HTML::Lint'           => '2.20';
 #requires 'Test::WWW::Simple'    => '0.34';
@@ -112,7 +125,7 @@ requires 'Test::HTML::Tidy'         => '1.00';
 
 requires 'TAP::Formatter::HTML'     => '0.11';
 requires 'Smolder'                  => '1.51';
-requires 'WWW::Mechanize::Firefox'  => '0.75';
+requires 'WWW::Mechanize::Firefox'  => '0.76';
 
 requires 'Test::WWW::Mechanize::PSGI' => '0.35';
 requires 'Data::Random'               => '0.11';
