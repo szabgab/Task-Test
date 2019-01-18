@@ -137,6 +137,13 @@ requires 'Term::ANSIColor'          => '4.03' if not win32;
 requires 'Win32::Console'           => '0.10' if win32;
 
 
+requires 'Test::CheckManifest'      => '0';
+requires 'Test::Whitespaces'        => '0';
+requires 'Test::Prereq'             => '0';
+requires 'Test::Synopsis'           => '0';
+requires 'Perl::MinimumVersion'     => '0';
+
+
 no_index 'directory' => qw{ t xt eg share inc privinc };
 homepage 'https://github.com/szabgab/Task-Test';
 bugtracker 'https://github.com/szabgab/Task-Test';
